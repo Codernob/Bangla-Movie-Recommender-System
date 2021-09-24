@@ -1,22 +1,22 @@
-Movie_ID,Title,Year,Genre
-2719,Matir Pori,2016,"Romance, Action"
-2720,Raja 420,2016,Comedy
-2721,Bhalobasboi To,2016,Romance
-2722,Sweetheart,2016,Romance
-2723,Bullet Babu,2016,Action
-2724,Bhola To Jay Na Tare,2016,Romance
-2725,Utola Mon,2016,Romance
-2726,Mon Jaane Na Moner Adhar,2016,Courtroom drama
-2727,Purno Doirgho Prem Kahini 2,2016,Sports
-2728,Shankhachil,2016,Drama
-2729,Musafir,2016,"Action, Thriller"
-2730,Ostitto,2016,Romance
-2731,Aral,2016,"Action, Thriller"
-2732,Mastani,2016,"Action, Thriller"
-2733,Bossgiri,2016,"Romance, Thriller"
-2734,Rokto,2016,Action
-2735,Shooter,2016,"Action, Romance"
-2736,Aynabaji,2016,Thriller
-2737,Prem Ki Bujhini,2016,"Romance, Thriller"
-2738,Ek Rasta,2016,"Action, Thriller"
-2739,Lal Sobujer Sur,2016,Historical drama
+Movie_ID,Title,Director,Cast,Year,Genre
+2719,Matir Pori,Simon Tariq,"Symon Sadik, Moumita Mau, Sadia Islam Lamia",2016,"Romance, Action"
+2720,Raja 420,Uttam Akash,"Shakib Khan, Apu Biswas, Amit Hasan",2016,Comedy
+2721,Bhalobasboi To,Belal Ahmed,"Moushumi, Niloy Alamgir",2016,Romance
+2722,Sweetheart,Wajed Ali Sumon,"Riaz, Mim Bidya Sinha Saha, Bappy Chowdhury",2016,Romance
+2723,Bullet Babu,Moin Biswas,"Rohan, Emu Sikder, Shakira",2016,Action
+2724,Bhola To Jay Na Tare,Rafique Sikder,"Nirab Hossain, Tanha Tasnia",2016,Romance
+2725,Utola Mon,Abdul Awal,"Arian Shah, Nir, Monica",2016,Romance
+2726,Mon Jaane Na Moner Adhar,Mushfiqur Rahman Gulzar,"Moushumi, Ferdous",2016,Courtroom drama
+2727,Purno Doirgho Prem Kahini 2,Shafi Uddin Shafi,"Shakib Khan, Jaya Ahsan",2016,Sports
+2728,Shankhachil,Goutam Ghose,"Prosenjit Chatterjee, Kusum Sikder",2016,Drama
+2729,Musafir,Ashiqur Rahman,"Arifin Shuvoo, Marjan Jenifa",2016,"Action, Thriller"
+2730,Ostitto,Anonno Mamun,"Arifin Shuvoo, Tisha",2016,Romance
+2731,Aral,Shahed Chowdhury,"Shahriaz, Achol, Bipasha Kabir",2016,"Action, Thriller"
+2732,Mastani,Firoz Khan Prince,"Kazi Maruf, Moushumi Hamid",2016,"Action, Thriller"
+2733,Bossgiri,Shamim Ahamed Roni,"Shakib Khan, Shabnom Bubly",2016,"Romance, Thriller"
+2734,Rokto,Wajed Ali Sumon,"Ziaul Roshan, Pori Moni",2016,Action
+2735,Shooter,Raju Chowdhury,"Shakib Khan, Shabnom Bubly",2016,"Action, Romance"
+2736,Aynabaji,Amitabh Reza Chowdhury,"Chanchal Chowdhury, Nabila, Partha Barua",2016,Thriller
+2737,Prem Ki Bujhini,"Abdul Aziz, Sudipto Sarkar","Om, Subhashree Ganguly, Jannatul Ferdoush Peya",2016,"Romance, Thriller"
+2738,Ek Rasta,Iftakar Chowdhury,"Bappy Chowdhury, Anisur Rahman Milon, Bobby",2016,"Action, Thriller"
+2739,Lal Sobujer Sur,Mushfikur Rahman Guljar,"Omar Sani, Subrata, Shera Zaman, Rafiqullah Selim, Jhuna Chowdhury",2016,Historical drama
