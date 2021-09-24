@@ -1,35 +1,35 @@
-Movie_ID,Title,Year,Genre
-2719,The God of Small Things,2017,Drama
-2720,Mastan O Police,2017,Action
-2721,Rina Brown,2017,"War, Drama"
-2722,Valobasha Emoni Hoy,2017,Romance
-2723,Premi O Premi,2017,Romance
-2724,Bhuban Majhi,2017,War
-2725,Meyeti Ekhon Kothay Jabe,2017,Drama
-2726,Nuru Miah and His Beauty Driver,2017,Drama
-2727,Sultana Bibiana,2017,Romance
-2728,Swatta,2017,"Romance, Drama"
-2729,Tui Amar,2017,"Romance, Drama"
-2730,Dhat Teri Ki,2017,Comedy
-2731,Apon Manush,2017,Romance
-2732,Porobashinee,2017,Sci-Fi
-2733,Nabab,2017,Action
-2734,Rajneeti (2017 film),2017,Political thriller
-2735,Boss 2: Back to Rule,2017,Action
-2736,Voyonkor Sundor,2017,Suspense
-2737,Ohongkar,2017,Romance
-2738,Drama,2017,Drama
-2739,Rangbaaz,2017,Action
-2740,Dhaka Attack,2017,"Action, Thriller"
-2741,Dulavai Zindabad,2017,"Action, Drama"
-2742,Doob: No Bed of Roses,2017,Drama
-2743,Bengali Beauty,2017,"Romance, Historical Drama"
-2744,Noor Jahaan,2017,Romance
-2745,Chalbaaz,2017,Thriller
-2746,Pashan,2017,Thriller
-2747,Detective,2017,Animated
-2748,Inspector Notty K,2017,Comedy
-2749,Bhalo Theko,2017,Romance
-2750,Bizli,2017,Superhero
-2751,Mrittupuri: Kill Zone,2017,Action
-2752,Ami Neta Hobo,2017,Romance
+Movie_ID,Title,Director,Cast,Year,Genre
+2719,The God of Small Things,Saud Jubaer,"Mahmud Alam, Samin Sababa,",2017,Drama
+2720,Mastan O Police,Kazi Hayat,"Kazi Maruf, Bindiya",2017,Action
+2721,Rina Brown,Shameem Akhtar,"Saberi Alam, Tarik Anam",2017,"War, Drama"
+2722,Valobasha Emoni Hoy,Tania Ahmed,"Irfan Sazzad, Mim Bidya Sinha Saha",2017,Romance
+2723,Premi O Premi,Zakir Hossain Raju,"Arifin Shuvo, Nusrat Faria Mazhar",2017,Romance
+2724,Bhuban Majhi,Fakhrul Arefeen Khan,"Parambrata Chatterjee, Aparna Ghosh, Quazi Nawshaba Ahmed, Mamunur Rashid",2017,War
+2725,Meyeti Ekhon Kothay Jabe,Nader Chowdhury,"Falguni Rahman Jolly, Fazlur Rahman Babu, Shah Riaz",2017,Drama
+2726,Nuru Miah and His Beauty Driver,Mizanur Rahman,Fazlur Rahman Babu,2017,Drama
+2727,Sultana Bibiana,Himel Ashraf,"Bappy Chowdhury, Achol, Amit Hasan, Shahiduzzaman Selim, Mamunur Rashid",2017,Romance
+2728,Swatta,Hashibur Reza Kallol,"Shakib Khan, Paoli Dam",2017,"Romance, Drama"
+2729,Tui Amar,Sajol Ahmad,"Symon Sadik, Misty Jannat",2017,"Romance, Drama"
+2730,Dhat Teri Ki,Shamim Ahmed Roni,"Arifin Shuvo, Nusrat Faria Mazhar, Ziaul Roshan, Farin Khan",2017,Comedy
+2731,Apon Manush,Shah Alam Mondol,"Bappi Chowdhury, Pori Moni",2017,Romance
+2732,Porobashinee,Swapan Ahmed,"Mamnun Hasan Emon, Sabyasachi Chakrabarty, Reeth Mazumder",2017,Sci-Fi
+2733,Nabab,Joydeep Mukherjee,"Shakib Khan, Subhashree Ganguly, Amit Hasan, Rajatava Dutta",2017,Action
+2734,Rajneeti (2017 film),Bulbul Biswas,"Shakib Khan, Apu Biswas, Anisur Rahman Milon, Amit Hasan, Ali Raj",2017,Political thriller
+2735,Boss 2: Back to Rule,Baba Yadav,"Jeet, Nusrat Faria Mazhar",2017,Action
+2736,Voyonkor Sundor,Animesh Aich,"Parambrata Chatterjee, Ashna Habib Bhabna",2017,Drama
+2737,Ohongkar,Shahadat Hossain,"Shakib Khan, Shabnam Bubly",2017,Romance
+2738,Drama,Jahangir Alam Sumon,"Popy (actress), DA Tayeb",2017,Drama
+2739,Rangbaaz,"Shamim Ahmed Roni, Abdul Mannan","Shakib Khan, Shabnom Bubly",2017,Action
+2740,Dhaka Attack,Deepankar Deepan,"Arifin Shuvo, Mahiya Mahi, Afzal Hossain, Shatabdi Wadud A B M Shumon, Nowshaba",2017,"Action, Thriller"
+2741,Dulavai Zindabad,Montazur Rahman Akbar,"Moushumi, Mim, Bappy, Dipjol",2017,"Action, Drama"
+2742,Doob: No Bed of Roses,Mostofa Sarwar Farooki,"Irrfan Khan, Nusrat Imrose Tisha",2017,Drama
+2743,Bengali Beauty,Rahsaan Noor,"Rahsaan Noor, Mumtaheena Toya",2017,"Romance, Historical Drama"
+2744,Noor Jahaan,Raj Chakraborty,"Puja Cherry, Adrit Roy",2017,Romance
+2745,Chalbaaz,Joydeep Mukherjee,"Shakib Khan, Subhashree Ganguly",2017,Thriller
+2746,Pashan,Saikat Nasir,"Mim Bidya Sinha Saha, Om Sahani",2017,Thriller
+2747,Detective,Tapan Ahmed,"Arifin Shuvo, Nusrat Faria Mazhar",2017,Animated
+2748,Inspector Notty K,Ashok Pati,"Jeet, Nusrat Faria Mazhar",2017,Comedy
+2749,Bhalo Theko,Zakir Hossain Raju,"Arifin Shuvo, Tanha Tasniya",2017,Romance
+2750,Bizli,Iftakar Chowdhury,Eamin Haque,2017,Superhero
+2751,Mrittupuri: Kill Zone,Zayed Rizwan,"Arifin Shuvo, Prosun Azad",2017,Action
+2752,Ami Neta Hobo,Uttam Akash,"Shakib Khan, Mim Bidya Sinha Saha",2017,Romance
