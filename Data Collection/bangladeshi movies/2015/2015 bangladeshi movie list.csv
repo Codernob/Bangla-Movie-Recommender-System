@@ -1,32 +1,32 @@
-Movie_ID,Title,Year,Genre
-2719,Game,2015,Action
-2720,Chupi Chupi Prem,2015,Comedy
-2721,Putro Ekhon Poysawala,2015,Drama
-2722,Romeo vs Juliet,2015,Romantic comedy
-2723,Zero Degree,2015,Psychological thriller
-2724,Big Brother,2015,"Action, Comedy"
-2725,Bhalobasha Simaheen,2015,Romantic
-2726,Kartooz,2015,"Action, Crime, Thriller"
-2727,This Is Love: Eito Prem,2015,"Romance, Drama, War"
-2728,Chuye Dile Mon,2015,Romance
-2729,Gunda: The Terrorist,2015,Action
-2730,Warning,2015,"Action, Thriller, Comedy"
-2731,Supatar Thikana,2015,Drama
-2732,Action Jasmine,2015,"Action, Comedy"
-2733,Ghashful,2015,Drama
-2734,Ochena Hridoy: Unknown Love,2015,Romance
-2735,Dui Prithibi,2015,Romance
-2736,U-Turn,2015,Thriller
-2737,Padma Patar Jol,2015,Romance
-2738,Agnee II,2015,Action
-2739,Love Marriage,2015,"Action, Romance"
-2740,Black Money,2015,"Action, Comedy"
-2741,Aaro Bhalobashbo Tomay,2015,Romance
-2742,The Story of Samara,2015,"Horror, Supernatural"
-2743,Jalal's Story,2015,Drama
-2744,Aashiqui,2015,Romance
-2745,Gariwala,2015,"Family, Drama"
-2746,Runout,2015,"Action, Crime"
-2747,Gangster Returns,2015,Action
-2748,Antaranga,2015,"Action, Romance"
-2749,Blackmail,2015,"Action, Romance, Thriller"
+Movie_ID,Title,Director,Cast,Year,Genre
+2719,Game,Royal Anik,"Nirab Hossain, Amrita Khan",2015,Action
+2720,Chupi Chupi Prem,Mostafizur Rahman Manik,"Symon Sadik, Priyonti, Misha sawdagor, Ali Raj",2015,Comedy
+2721,Putro Ekhon Poysawala,Nargis Akter,"Bobita, Omar Ayaz Oni, Farah Ruma, Mamnun Hasan Emon, Shaina Amin",2015,Drama
+2722,Romeo vs Juliet,Abdul Aziz,"Mahiya Mahi, Ankush Hazra",2015,Romantic comedy
+2723,Zero Degree,Animesh Aich,"Mahfuz Ahmed, Joya Ahsan, Dilruba Yasmeen Ruhee",2015,Psychological thriller
+2724,Big Brother,Shafi Uddin Shafi,"Mahiya Mahi, Shipan Mitra, Ahmed Sharif, Danny Sidak, Arjumand Ara Bokul",2015,"Action, Comedy"
+2725,Bhalobasha Simaheen,Shah Alam Mukul,"Pori Moni, Anisur Rahman Milon, Zayed Khan",2015,Romantic
+2726,Kartooz,Bapparaj,"Farzana Rikta, Samraat, Nipun",2015,"Action, Crime, Thriller"
+2727,This Is Love: Eito Prem,Shohel Arman,"Shakib Khan, Afsana Ara Bindu",2015,"Romance, Drama, War"
+2728,Chuye Dile Mon,Shihab Shaheen,"Arifin Shuvoo, Zakia Bari Momo",2015,Romance
+2729,Gunda: The Terrorist,,"Bappy Chowdhury, Achol, Amrita Khan",2015,Action
+2730,Warning,Shafi Uddin,"Arifin Shuvoo, Mahiya Mahi",2015,"Action, Thriller, Comedy"
+2731,Supatar Thikana,Prasun Rahman,"Aparna, Jayanta Chattapaddhay, Mahmudul Islam",2015,Drama
+2732,Action Jasmine,Iftakar Chowdhury,"Symon Sadik, Eamin Haque Bobby",2015,"Action, Comedy"
+2733,Ghashful,Akram Khan,"Kazi Asif, Shayla Sabi",2015,Drama
+2734,Ochena Hridoy: Unknown Love,Shafiqul Islam Khan,"Mamnun Hasan Emon, Prosun Azad, Abm Sumon",2015,Romance
+2735,Dui Prithibi,F I Manik,"Shakib Khan, Apu Biswas",2015,Romance
+2736,U-Turn,Alvee Ahmed,"Shipan Mitra, Irfaan Sajjad, Shahiduzzaman Selim, Misha Sawdagor",2015,Thriller
+2737,Padma Patar Jol,Tonmoy Tansen,"Mamnun Hasan Emon, Bidya Sinha Saha Mim",2015,Romance
+2738,Agnee II,Iftakar Chowdhury,"Mahiya Mahi, Om",2015,Action
+2739,Love Marriage,Shahin Sumon,"Shakib Khan, Apu Biswas",2015,"Action, Romance"
+2740,Black Money,Shafi Uddin,"Symon Sadik, Moushumi Hamid",2015,"Action, Comedy"
+2741,Aaro Bhalobashbo Tomay,S.A Alik,"Shakib Khan, Porimoni",2015,Romance
+2742,The Story of Samara,Rikia Masudo,Shiba Ali Khan,2015,"Horror, Supernatural"
+2743,Jalal's Story,Abu Shahed,"Mosharraf Karim, Tauquir Ahmed, Moushumi Hamid",2015,Drama
+2744,Aashiqui,"Abdul Aziz, Ashok Pati","Ankush Hazra, Nusraat Faria Mazhar",2015,Romance
+2745,Gariwala,Ashraf Shishir,,2015,"Family, Drama"
+2746,Runout,Tonmoy Tansen,"Shajal Noor, Mousumi Nag, Romana Shwarna",2015,"Action, Crime"
+2747,Gangster Returns,Ashiqur Rahman,"Ziaul Faruq Apurba, Jannatul Ferdous Peya",2015,Action
+2748,Antaranga,Chashi Nazrul Islam,"Alisha Pradhan, Mamnun Hasan Emon, Amit Hasan",2015,"Action, Romance"
+2749,Blackmail,Anonno Mamun,"Anisur Rahman Milon, Eamin Haque Bobby, Moushumi Hamid",2015,"Action, Romance, Thriller"
