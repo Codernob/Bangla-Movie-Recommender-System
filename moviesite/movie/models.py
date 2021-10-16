@@ -14,7 +14,7 @@ class Genre(models.Model):
         which_movie = ", ".join(str(seg) for seg in self.movies.all())
         return f"The genre of {which_movie} is {self.genre_name}"
     def which_movie(self):
-        return ", ".join(str(seg) for seg in self.movies.all())
+        return (", ".join(str(seg) for seg in self.movies.all())).split(", ")
 
 Genders = (
     ('MALE','Male'),
