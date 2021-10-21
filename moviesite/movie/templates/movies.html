@@ -39,7 +39,7 @@
 	            		<div class="movie-item-style-2 movie-item-style-1">
 	            			<img src='{% static "" %}movie/images/uploads/{{movie}}.jpg' alt="">
 	            			<div class="hvr-inner">
-	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            				<a  href="{% url 'movie' movie.id %}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 	            			</div>
 	            			<div class="mv-item-infor">
 	            				<h6><a href="#">{{movie}}</a></h6>

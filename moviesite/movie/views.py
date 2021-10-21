@@ -19,3 +19,9 @@ def celebrities(request):
     return render(request,'celebrities.html',{
         "celebrities":Cast.objects.all()
     })
+
+def movie(request, movie_id):
+    movieo = Movie.objects.get(id=movie_id)
+    return render(request, "movie.html", {
+        "movie": movieo
+    })
