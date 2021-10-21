@@ -138,14 +138,14 @@
 							<span></span>
 						</div>
 				    </div>
-				    <a href="home.html"><img class="logo" src="{% static 'movie/images/logo1.png' %}" alt="" width="119" height="58"></a>
+				    <a href="{% url 'home' %}"><img class="logo" src="{% static 'movie/images/logo1.png' %}" alt="" width="119" height="58"></a>
 			    </div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav flex-child-menu menu-left">
-						<li><a href="movies.html">Movies</a></li>
-						<li><a href="genres.html">Genres</a></li>
-						<li><a href="celebrities.html">Celebrities</a></li>
+						<li><a href="{% url 'movies' %}">Movies</a></li> 
+						<li><a href="{% url 'genres' %}">Genres</a></li>
+						<li><a href="{% url 'celebrities' %}">Celebrities</a></li>
 					</ul>
 					<ul class="nav navbar-nav flex-child-menu menu-right">
               

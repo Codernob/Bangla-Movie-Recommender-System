@@ -37,7 +37,7 @@
 				<div class="celebrity-items">
 					{% for celeb in celebrities %}
 					<div class="ceb-item"> 
-						<a href="celebritysingle.html"><img src='{% static "" %}movie/images/uploads/{{celeb.name}}.jpg' alt=""></a>
+						<a href="{% url 'celebrity' celeb.id %}"><img src='{% static "" %}movie/images/uploads/{{celeb.name}}.jpg' alt=""></a>
 						<div class="ceb-infor">
 							<h2><a href="celebritylist.html">{{celeb.name}}</a></h2>
 							{% if celeb.gender is "Male" %}
