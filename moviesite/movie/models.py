@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Movie(models.Model):
     title = models.CharField(max_length=64)
-    release_date = models.DateField()
+    release_date = models.DateField(null=True, blank=True)
     def __str__(self):
         return f"{self.title}"
 
@@ -24,7 +24,7 @@ Genders = (
 class Cast(models.Model):
     name = models.CharField(max_length=64)
     gender = models.CharField(max_length=6, choices=Genders, default='Male')
-    date_of_birth = models.DateField()
+    date_of_birth = models.DateField(null=True, blank=True)
     movies = models.ManyToManyField(Movie, blank=True, related_name="cast_movie")
     def __str__(self):
         which_movie = ", ".join(str(seg) for seg in self.movies.all())
@@ -33,7 +33,7 @@ class Cast(models.Model):
 class Director(models.Model):
     name = models.CharField(max_length=64)
     gender = models.CharField(max_length=6, choices=Genders, default='Male')
-    date_of_birth = models.DateField()
+    date_of_birth = models.DateField(null=True, blank=True)
     which_movie = models.ForeignKey(Movie, on_delete=models.SET_NULL, blank=True, null=True)
     def __str__(self):
         return f"{self.name} directed {self.which_movie}"
@@ -41,7 +41,7 @@ class Director(models.Model):
 class User(models.Model):
     name = models.CharField(max_length=64)
     gender = models.CharField(max_length=6, choices=Genders, default='Male')
-    date_of_birth = models.DateField()
+    date_of_birth = models.DateField(null=True, blank=True)
     movie = models.ManyToManyField(Movie, blank=True, related_name="user_movie", through='Rate')
     def __str__(self):
         return f"{self.name}"
