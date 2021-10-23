@@ -32,17 +32,17 @@
 			</div>
 			<div class="tabs">
 			            <div class="row">
-							{% for m in genre.which_movie %}
+							{% for movie in genre.movies.all %}
 							<div class="slide-it slick-slide slick-active" style="width: 283px;" tabindex="-1" role="option" aria-describedby="slick-slide01" data-slick-index="5" aria-hidden="false">
 								<div class="movie-item">
 									<div class="mv-img"> 
-										<img src='{% static "" %}movie/images/uploads/{{m}}.jpg' alt="">
+										<img src='{% static "" %}movie/images/uploads/{{movie.title}}.jpg' alt="">
 									</div>
 									<div class="hvr-inner">
-										<a href="moviesingle.html" tabindex="0"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+										<a href="{% url 'movie' movie.id %}" tabindex="0"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 									</div>
 									<div class="title-in">
-										<h6><a href="#" tabindex="0">{{ m }}</a></h6>
+										<h6><a href="#" tabindex="0">{{ movie.title }}</a></h6>
 										<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 									</div>
 								</div>
