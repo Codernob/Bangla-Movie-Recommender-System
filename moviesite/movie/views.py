@@ -31,3 +31,6 @@ def celebrity(request, celebrity_id):
     return render(request, "celebrity.html", {
         "celebrity": celebrityo
     })
+
+def search(request):
+    return render(request,'searchresult.html',{})

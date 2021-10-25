@@ -24,6 +24,8 @@ class Cast(models.Model):
     name = models.CharField(max_length=64)
     gender = models.CharField(max_length=6, choices=Genders, default='Male')
     date_of_birth = models.DateField(null=True, blank=True)
+    overview = models.CharField(max_length=1000, default='Not Updated Yet')
+    biography = models.CharField(max_length=10000, default='Not Updated Yet')
     movies = models.ManyToManyField(Movie, blank=True, related_name="cast_movie")
     def __str__(self):
         which_movie = ", ".join(str(seg) for seg in self.movies.all())
