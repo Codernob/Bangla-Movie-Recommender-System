@@ -158,9 +158,12 @@
 	    </nav>
 	    
 	    <!-- top search form -->
-	    <div class="top-search">
-			<input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
-	    </div>
+	    {% comment %} <div class="top-search"> {% endcomment %}
+		<form class="top-search" method = POST action="{% url 'searchresult' %}">
+		{% csrf_token %}
+			<input type="text" placeholder="Search for a movie, TV Show or Celebrity that you are looking for" name="searched">
+		</form>
+	    {% comment %} </div> {% endcomment %}
 	</div>
 </header>
 {% block body %}
