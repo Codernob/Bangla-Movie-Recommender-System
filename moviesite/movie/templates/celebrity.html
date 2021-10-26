@@ -25,7 +25,12 @@
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="movie-single-ct">
 					<h1 class="bd-hd">{{celebrity.name}}</h1>
-					<p class="ceb-single">Actor  |  Producer</p>
+					{% if celebrity.gender == "MALE" %}
+					<p class="ceb-single">Actor</p>
+					{% endif %}
+					{% if celebrity.gender == "FEMALE" %}
+					<p class="ceb-single">Actress</p>
+					{% endif %}
 					<div class="social-link cebsingle-socail">
 						<a href="#"><i class="ion-social-facebook"></i></a>
 						<a href="#"><i class="ion-social-twitter"></i></a>
@@ -124,7 +129,7 @@
 						        		<div class="rv-hd">
 						            		<div>
 						            			<h3>Biography of</h3>
-					       	 					<h2>Hugh Jackman</h2>
+					       	 					<h2>{{celebrity.name}}</h2>
 						            		</div>
 						            	</div>
 						            	<div class="title-hd-sm">
@@ -245,7 +250,7 @@
 						            	<div class="rv-hd">
 						            		<div>
 						            			<h3>Biography of</h3>
-					       	 					<h2>Hugh Jackman</h2>
+					       	 					<h2>{{celebrity.name}}</h2>
 						            		</div>
 										
 						            	</div>

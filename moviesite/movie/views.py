@@ -33,4 +33,7 @@ def celebrity(request, celebrity_id):
     })
 
 def search(request):
-    return render(request,'searchresult.html',{})
+    # if request.method == "POST":
+    searched = request.POST['searched']
+    movie_re = Movie.objects.filter(title__contains=searched)
+    return render(request,'searchresult.html', {'movie_re':movie_re})

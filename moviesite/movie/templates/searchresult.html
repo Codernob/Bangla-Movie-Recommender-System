@@ -16,6 +16,7 @@
 		</div>
 	</div>
 </div>
+{% comment %} {% if searched %} {% endcomment %}
 <div class="page-single movie_list">
 	<div class="container">
 		<div class="row ipad-width2">
@@ -34,11 +35,11 @@
 					<a href="movielist.html" class="list"><i class="ion-ios-list-outline active"></i></a>
 					<a href="moviegrid.html" class="grid"><i class="ion-grid"></i></a>
 				</div>
-                
+                {% for movie in movie_re %}
 				<div class="movie-item-style-2">
-					<img src="{% static 'movie/images/uploads/mv1.jpg' %}" alt="">
+					<img src='{% static "" %}movie/images/uploads/{{movie}}.jpg' alt="">
 					<div class="mv-item-infor">
-						<h6><a href="moviesingle.html">oblivion <span>(2012)</span></a></h6>
+						<h6><a href="{% url 'movie' movie.id %}">{{movie.title}}<span>({{movie.release_date}})</span></a></h6>
 						<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
 						<p class="describe">Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...</p>
 						<p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
@@ -46,6 +47,7 @@
 						<p>Stars: <a href="#">Robert Downey Jr.,</a> <a href="#">Chris Evans,</a> <a href="#">  Chris Hemsworth</a></p>
 					</div>
 				</div>
+				{% endfor %}
 				<div class="topbar-filter">
 					<label>Movies per page:</label>
 					<select>
@@ -130,6 +132,7 @@
 		</div>
 	</div>
 </div>
-
-
+{% comment %} {% else %}
+	<h1> no search </h1>
+{% endif %} {% endcomment %}
 {% endblock %}
