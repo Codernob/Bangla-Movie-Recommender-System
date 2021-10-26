@@ -4,6 +4,7 @@ from django.db import models
 class Movie(models.Model):
     title = models.CharField(max_length=64)
     release_date = models.DateField(null=True, blank=True)
+    overview = models.CharField(max_length=10000, default='Not Updated Yet')
     celebrities = models.ManyToManyField("Cast", blank=True, related_name="movie_celeb")
     def __str__(self):
         return f"{self.title}"
