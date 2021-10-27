@@ -73,3 +73,5 @@ def signup(request):
         return redirect('/')
     # else:
     return render(request,'layout.html')     
+
+    #Git fol.
