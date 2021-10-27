@@ -45,8 +45,11 @@ class Subscriber(models.Model):
     gender = models.CharField(max_length=6, choices=Genders, default='Male')
     date_of_birth = models.DateField(null=True, blank=True)
     movie = models.ManyToManyField(Movie, blank=True, related_name="user_movie", through='Rate')
+    email=models.CharField(max_length=30,null=True, blank=True)
+    password=models.CharField(max_length=20,null=True)
+
     def __str__(self):
-        return f"{self.name}"
+        return f"{self.name} {self.email} {self.gender}"
 
 class Rate(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)

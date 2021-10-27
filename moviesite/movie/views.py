@@ -1,4 +1,4 @@
-from django.shortcuts import redirect,HttpResponse ,render
+from django.shortcuts import redirect,HttpResponse,render
 from django.contrib import messages
 from django.contrib.auth.models import User,auth
 from .models import Genders,Subscriber,Movie,Cast,Director,Genre
@@ -66,8 +66,8 @@ def signup(request):
         password2=request.POST['password2']
 
         if password1==password2:
-            user=User.objects.create_user(username=username,email=email,date_of_birth=date_of_birth,pasasword=password1)
-            user.save();
+            user=Subscriber(name=username,email=email,date_of_birth=date_of_birth,pasasword=password1)
+            user.save()
             return redirect('login') 
         #print('User created')
         return redirect('/')
