@@ -40,7 +40,7 @@ class Director(models.Model):
     def __str__(self):
         return f"{self.name} directed {self.which_movie}"
 
-class User(models.Model):
+class Subscriber(models.Model):
     name = models.CharField(max_length=64)
     gender = models.CharField(max_length=6, choices=Genders, default='Male')
     date_of_birth = models.DateField(null=True, blank=True)
@@ -50,7 +50,7 @@ class User(models.Model):
 
 class Rate(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(Subscriber, on_delete=models.CASCADE)
     rating = models.IntegerField()
     def __str__(self):
         return f"{self.user} rates {self.movie} a {self.rating}"

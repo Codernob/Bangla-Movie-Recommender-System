@@ -1,7 +1,7 @@
 from django.shortcuts import redirect,HttpResponse ,render
 from django.contrib import messages
 from django.contrib.auth.models import User,auth
-from .models import Genders,Movie,Cast,Director,Genre
+from .models import Genders,Subscriber,Movie,Cast,Director,Genre
 # Create your views here.
 
 def home(request):
