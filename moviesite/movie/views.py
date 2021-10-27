@@ -43,35 +43,38 @@ def search(request):
 def login(request):  
     if request.method=='POST':
         username=request.POST['username']
-        password=request.POST['password']
+        password1=request.POST['password1']
         
-        user=auth.authenticate(username=username,password=password)
+        user=auth.authenticate(username=username,password=password1)
 
-        if user is not None:
+        # if user is not None:
+        if user is not None or Subscriber.objects.filter(password=password1).exists():    
             auth.login(request,user)
-            return redirect('/')
+            #messages.error(request,'Login Successful') 
+            return redirect('home.html')
+            
         else:
             messages.info(request,'Invalid Credentials')
-            return redirect('login')        
+            return redirect('login.html')        
     else:
-        return render(request,'layout.html')     
+        return render(request,'login.html')     
 
 def signup(request):
     if request.method== 'POST':
         username=request.POST['username']
         email=request.POST['email']
         date_of_birth=request.POST['date_of_birth']
-        #gender=request.POST['gender']
+        gender=request.POST['gender']
         password1=request.POST['password1']
         password2=request.POST['password2']
 
         if password1==password2:
-            user=Subscriber(name=username,email=email,date_of_birth=date_of_birth,pasasword=password1)
+            user=Subscriber(name=username,email=email,date_of_birth=date_of_birth,gender=gender,password=password1)
             user.save()
-            return redirect('login') 
+            return render(request,'home.html')     
         #print('User created')
         return redirect('/')
     # else:
-    return render(request,'layout.html')     
+    return render(request,'signup.html')     
 
     #Git fol.

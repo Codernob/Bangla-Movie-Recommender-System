@@ -9,6 +9,7 @@ urlpatterns = [
     path("celebrities/<int:celebrity_id>", views.celebrity, name="celebrity"),
     path("movies/<int:movie_id>", views.movie, name="movie"),
     path('searchresult.html',views.search,name="searchresult"),
-    path('login',views.login,name='login'),
-    path('signup',views.signup,name='signup'), 
+    path('login.html',views.login,name='login'),
+    path('signup.html',views.signup,name='signup'), 
+    
 ]

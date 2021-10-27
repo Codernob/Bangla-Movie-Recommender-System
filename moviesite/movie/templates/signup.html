@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><i>SIGN UP</i></title>
+
+</head>
+<body>
+<div class="login-wrapper"  id="signup-content">
+    <div class="login-content">
+            <!-- <a href="#" class="close">x</a> -->
+       <form method="POST" action="#">
+			{% csrf_token %}
+            <div class="row">
+                 <label for="username-2">
+                    Username:
+                    <input type="text" name="username" id="username-2" placeholder="" />
+					<!-- pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required"  -->
+                </label>
+            </div>
+           
+            <div class="row">
+                <label for="email-2">
+                    your email:
+                    <input type="text" name="email" id="email-2" placeholder="" />
+					<!--  -->
+                </label>
+            </div>
+
+			<div class="row">
+				<label for="dob-2">
+				   Date of Birth:
+				   <input type="date" name="date_of_birth" id="dob-2" placeholder=""/>
+				   <!-- pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required"  -->
+			   </label>
+		   </div>
+
+		   <div class="row">
+			<label for="gender-2">
+			   Gender:
+			   <input type="text" name="gender" id="gender-2" placeholder="" />
+		   </label>
+	   </div>
+
+             <div class="row">
+                <label for="password-2">
+                    Password:
+                    <input type="password" name="password1" id="password-2" placeholder="" />
+					<!-- pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.
+])(?=.*[A-Z])(?=.*[a-z]).*$" required="required"  -->
+                </label>
+            </div>
+             <div class="row">
+                <label for="repassword-2">
+                    Confirm Password:
+                    <input type="password" name="password2" id="repassword-2" placeholder=""/>
+					<!-- pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.
+					])(?=.*[A-Z])(?=.*[a-z]).*$" required="required"  -->
+                </label>
+            </div>
+           <div class="row">
+             <button type="submit">sign up</button>
+           </div>
+        </form> 
+    </div>
+</div>
+    
+</body>
+</html>

@@ -45,37 +45,11 @@
 <div class="login-wrapper" id="login-content">
     <div class="login-content">
         <a href="#" class="close">x</a>
-        <h3>Login</h3>
-        <form method="POST" action="#">
-			{% csrf_token %}
-        	<div class="row">
-        		 <label for="username">
-                    Username:
-                    <input type="text" name="username" id="username" placeholder=""/>
-					<!-- pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required"  -->
-                </label>
-        	</div>
-           
-            <div class="row">
-            	<label for="password">
-                    Password:
-                    <input type="password" name="password" id="password" placeholder=""/>
-					<!-- pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.
-					])(?=.*[A-Z])(?=.*[a-z]).*$" required="required"  -->
-                </label>
-            </div>
-            <div class="row">
-            	<div class="remember">
-					<div>
-						<input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
-					</div>
-            		<a href="#">Forget password ?</a>
-            	</div>
-            </div>
-           <div class="row">
-           	 <button type="submit">Login</button>
-           </div>
-        </form>
+        <!-- <h3>Login</h3> -->
+		<h3><a href="{% url 'login' %}">LOGIN</a></h3>
+         
+		<!-- code shifted from here to seperate html file ! -->
+		
         <!-- <div class="row">
         	<p>Or via social</p>
             <div class="social-btn-2">
@@ -90,60 +64,13 @@
 <div class="login-wrapper"  id="signup-content">
     <div class="login-content">
         <a href="#" class="close">x</a>
-        <h3>sign up</h3>
-        <form method="POST" action="#">
-			{% csrf_token %}
-            <div class="row">
-                 <label for="username-2">
-                    Username:
-                    <input type="text" name="username" id="username-2" placeholder="" />
-					<!-- pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required"  -->
-                </label>
-            </div>
-           
-            <div class="row">
-                <label for="email-2">
-                    your email:
-                    <input type="text" name="email" id="email-2" placeholder="" />
-					<!--  -->
-                </label>
-            </div>
-
-			<div class="row">
-				<label for="dob-2">
-				   Date of Birth:
-				   <input type="date" name="date_of_birth" id="dob-2" placeholder=""/>
-				   <!-- pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required"  -->
-			   </label>
-		   </div>
-
-		   <!-- <div class="row">
-			<label for="gender-2">
-			   Gender:
-			   <input type="text" name="gender" id="gender-2" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-		   </label>
-	   </div> -->
-
-             <div class="row">
-                <label for="password-2">
-                    Password:
-                    <input type="password" name="password1" id="password-2" placeholder="" />
-					<!-- pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.
-])(?=.*[A-Z])(?=.*[a-z]).*$" required="required"  -->
-                </label>
-            </div>
-             <div class="row">
-                <label for="repassword-2">
-                    Confirm Password:
-                    <input type="password" name="password2" id="repassword-2" placeholder=""/>
-					<!-- pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.
-					])(?=.*[A-Z])(?=.*[a-z]).*$" required="required"  -->
-                </label>
-            </div>
-           <div class="row">
-             <button type="submit">sign up</button>
-           </div>
-        </form>
+        <!-- <h3>sign up</h3> -->
+		<h3><a href="{% url 'signup' %}">SIGN UP</a></h3>
+		
+		
+		<!-- sign up code start -->
+        
+		<!-- sign up code end -->
     </div>
 </div>
 <!--end of signup form popup-->
