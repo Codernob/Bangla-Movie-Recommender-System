@@ -23,7 +23,7 @@
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="topbar-filter">
 					<p>Found <span>1,608 movies</span> in total</p>
-					<label>Sort by:</label>
+					{% comment %} <label>Sort by:</label>
 					<select>
 						<option value="popularity">Popularity Descending</option>
 						<option value="popularity">Popularity Ascending</option>
@@ -31,9 +31,9 @@
 						<option value="rating">Rating Ascending</option>
 						<option value="date">Release date Descending</option>
 						<option value="date">Release date Ascending</option>
-					</select>
-					<a href="movielist.html" class="list"><i class="ion-ios-list-outline active"></i></a>
-					<a href="moviegrid.html" class="grid"><i class="ion-grid"></i></a>
+					</select> {% endcomment %}
+					{% comment %} <a href="movielist.html" class="list"><i class="ion-ios-list-outline active"></i></a>
+					<a href="moviegrid.html" class="grid"><i class="ion-grid"></i></a> {% endcomment %}
 				</div>
                 {% for movie in movie_re %}
 				<div class="movie-item-style-2">
@@ -41,8 +41,8 @@
 					<div class="mv-item-infor">
 						<h6><a href="{% url 'movie' movie.id %}">{{movie.title}}<span>({{movie.release_date}})</span></a></h6>
 						<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						<p class="describe">Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...</p>
-						<p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+						<p class="describe">{{movie.overview}} </p>
+						{% comment %} <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p> {% endcomment %}
 						<p>Director: <a href="#">Joss Whedon</a></p>
 						<p>Stars: <a href="#">Robert Downey Jr.,</a> <a href="#">Chris Evans,</a> <a href="#">  Chris Hemsworth</a></p>
 					</div>
