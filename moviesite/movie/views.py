@@ -75,6 +75,9 @@ def signup(request):
         #print('User created')
         return redirect('/')
     # else:
-    return render(request,'signup.html')     
+    return render(request,'signup.html') 
 
+def profile(request):
+    return render(request,'profile.html',{})
+    
     #Git fol.
