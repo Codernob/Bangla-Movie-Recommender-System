@@ -1,7 +1,10 @@
+from django.http.response import HttpResponseRedirect
 from django.shortcuts import redirect,HttpResponse,render
 from django.contrib import messages
 from django.contrib.auth.models import User,auth
 from .models import Genders,Subscriber,Movie,Cast,Director,Genre
+from django.contrib.auth import logout as django_logout
+
 # Create your views here.
 
 def home(request):
@@ -79,5 +82,20 @@ def signup(request):
 
 def profile(request):
     return render(request,'profile.html',{})
+
+def logout(request):
+    django_logout(request)
+    return  HttpResponseRedirect('home.html')
+    # auth.logout(request)
+    # return redirect('/')
+    #if request.method == 'POST':
+    # logout(request)
+    # return redirect('/')   
+    #return HttpResponseRedirect('home.html')
+    
+    
+    
+
+ 
     
     #Git fol.
