@@ -18,9 +18,9 @@
 </div>
 <div class="page-single">
 	<div class="container">
-		<div class="row ipad-width">
+		<div class="row ipad-width"> 
 			<div class="col-md-8 col-sm-12 col-xs-12">
-				<div class="topbar-filter">
+				{% comment %} <div class="topbar-filter">
 					<p>Found <span>1,608 movies</span> in total</p>
 					<label>Sort by:</label>
 					<select>
@@ -33,7 +33,7 @@
 					</select>
 					<a href="movielist.html" class="list"><i class="ion-ios-list-outline "></i></a>
 					<a  href="moviegrid.html" class="grid"><i class="ion-grid active"></i></a>
-				</div>
+				</div> {% endcomment %}
 				<div class="flex-wrap-movielist">
 						{% for movie in movies %} 
 	            		<div class="movie-item-style-2 movie-item-style-1">
@@ -48,7 +48,7 @@
 	            		</div>
 						{% endfor %}
 				</div>		
-				<div class="topbar-filter">
+				{% comment %} <div class="topbar-filter">
 					<label>Movies per page:</label>
 					<select>
 						<option value="range">20 Movies</option>
@@ -65,10 +65,10 @@
 						<a href="#">79</a>
 						<a href="#"><i class="ion-arrow-right-b"></i></a>
 					</div>
-				</div>
+				</div> {% endcomment %}
 			</div>
 			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="sidebar">
+				{% comment %} <div class="sidebar">
 					<div class="searh-form">
 						<h4 class="sb-title">Search for movie</h4>
 						<form class="form-style-1" action="#">
@@ -117,18 +117,18 @@
 								</div>
 								<div class="col-md-12 ">
 									<input class="submit" type="submit" value="submit">
-								</div>
+								</div> {% endcomment %}
 							</div>
 						</form>
 					</div>
 					<div class="ads">
 						<img src="{% static 'movie/images/uploads/ads1.png' %}" alt="">
 					</div>
-					<div class="sb-facebook sb-it">
+					{% comment %} <div class="sb-facebook sb-it">
 						<h4 class="sb-title">Find us on Facebook</h4>
 						<iframe src="#" data-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftemplatespoint.net%2F%3Ffref%3Dts&tabs=timeline&width=340&height=315px&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"  height="315" style="width:100%;border:none;overflow:hidden" ></iframe>
-					</div>
-					<div class="sb-twitter sb-it">
+					</div> {% endcomment %}
+					{% comment %} <div class="sb-twitter sb-it">
 						<h4 class="sb-title">Tweet to us</h4>
 						<div class="slick-tw">
 							<div class="tweet item" id=""><!-- Put your twiter id here -->
@@ -136,7 +136,7 @@
 							<div class="tweet item" id=""><!-- Put your 2nd twiter account id here -->
 							</div>
 						</div>					
-					</div>
+					</div> {% endcomment %}
 				</div>
 			</div>
 		</div>
