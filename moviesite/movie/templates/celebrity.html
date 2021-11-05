@@ -51,7 +51,7 @@
 						            	<div class="col-md-8 col-sm-12 col-xs-12">
 						            		<p> {{celebrity.overview}} </p>
 											<p class="time"><a href="#">See full bio <i class="ion-ios-arrow-right"></i></a></p>
-						            		<div class="title-hd-sm">
+						            		{% comment %} <div class="title-hd-sm">
 												<h4>Videos &amp; Photos</h4>
 												<a href="#" class="time">All 5 Videos &amp; 245 Photos <i class="ion-ios-arrow-right"></i></a>
 											</div>
@@ -63,7 +63,7 @@
 													<img class="vd-img" src="{% static 'movie/images/uploads/image4.jpg' %}" alt="">
 													<a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0" rel="playlist"><img src="{% static 'movie/images/uploads/play-vd.png' %}" alt=""></a>
 												</div>
-											</div>
+											</div> {% endcomment %}
 											<div class="title-hd-sm">
 												<h4>filmography</h4>
 												<a href="#" class="time">Full Filmography<i class="ion-ios-arrow-right"></i></a>
@@ -97,7 +97,7 @@
 						            			<h6>Country:  </h6>
 						            			<p>Bangladesh</p>
 						            		</div>
-						            		<div class="sb-it">
+						            		{% comment %} <div class="sb-it">
 						            			<h6>Keywords:</h6>
 						            			<p class="tags">
 						            				<span class="time"><a href="#">jackman</a></span>
@@ -106,7 +106,7 @@
 													<span class="time"><a href="#">blockbuster</a></span>
 													<span class="time"><a href="#">final battle</a></span>
 						            			</p>
-						            		</div>
+						            		</div> {% endcomment %}
 						            		<div class="ads">
 												<img src="{% static 'movie/images/uploads/ads1.png' %}" alt="">
 											</div>
@@ -254,7 +254,7 @@
 						            		</div>
 										
 						            	</div>
-						            	<div class="topbar-filter">
+						            	{% comment %} <div class="topbar-filter">
 											<p>Found <span>14 movies</span> in total</p>
 											<label>Filter by:</label>
 											<select>
@@ -265,7 +265,7 @@
 												<option value="date">Release date Descending</option>
 												<option value="date">Release date Ascending</option>
 											</select>
-										</div>
+										</div> {% endcomment %}
 										<!-- movie cast -->
 										<div class="mvcast-item">											
 											{% for movie in celebrity.movies.all %}
