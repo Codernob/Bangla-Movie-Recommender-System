@@ -86,16 +86,7 @@ def profile(request):
 def logout(request):
     django_logout(request)
     return  HttpResponseRedirect('home.html')
-    # auth.logout(request)
-    # return redirect('/')
-    #if request.method == 'POST':
-    # logout(request)
-    # return redirect('/')   
-    #return HttpResponseRedirect('home.html')
-    
-    
-    
+    # return redirect('/') 
 
- 
     
     #Git fol.
