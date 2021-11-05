@@ -20,8 +20,8 @@
 	<meta name="author" content="">
 	<link rel="profile" href="#">
 
-    <!--Google Font-->
-    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+	<!--Google Font-->
+	<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
 	<!-- Mobile specific meta -->
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone-no">
@@ -31,159 +31,175 @@
 	<link rel="stylesheet" href="{% static 'movie/css/style.css' %}">
 
 </head>
-<body>
-<!--preloading-->
-<div id="preloader">
-    <img class="logo" src="{% static 'movie/images/logo1.png' %}" alt="" width="119" height="58">
-    <div id="status">
-        <span></span>
-        <span></span>
-    </div>
-</div>
-<!--end of preloading-->
-<!--login form popup-->
-<div class="login-wrapper" id="login-content">
-    <div class="login-content">
-        <a href="#" class="close">x</a>
-        <!-- <h3>Login</h3> -->
-		<h3><a href="{% url 'login' %}">LOGIN</a></h3>
-         
-		<!-- code shifted from here to seperate html file ! -->
-		
-        <!-- <div class="row">
-        	<p>Or via social</p>
-            <div class="social-btn-2">
-            	<a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
-            	<a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
-            </div>
-        </div> --> 
-    </div>
-</div>
-<!--end of login form popup-->
-<!--signup form popup-->
-<div class="login-wrapper"  id="signup-content">
-    <div class="login-content">
-        <a href="#" class="close">x</a>
-        <!-- <h3>sign up</h3> -->
-		<h3><a href="{% url 'signup' %}">SIGN UP</a></h3>
-		
-		
-		<!-- sign up code start -->
-        
-		<!-- sign up code end -->
-    </div>
-</div>
-<!--end of signup form popup-->
 
-<!-- BEGIN | Header -->
-<header class="ht-header">
-	<div class="container">
-		<nav class="navbar navbar-default navbar-custom">
+<body>
+	<!--preloading-->
+	<div id="preloader">
+		<img class="logo" src="{% static 'movie/images/logo1.png' %}" alt="" width="119" height="58">
+		<div id="status">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<!-- 
+start of -->
+	<!-- <div class="login-wrapper" id="login-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>Login</h3> -->
+	<!-- <li>Hello, {{user.username}}</li>
+		<h3>ddd</h3> -->
+	<!-- </div>
+</div>
+end of   -->
+
+
+	<!--end of preloading-->
+	<!--login form popup-->
+
+ 	
+	
+	<div class="login-wrapper" id="login-content">
+		<div class="login-content">
+			<a href="#" class="close">x</a>
+			<!-- <h3>Login</h3> -->
+			<h3><a href="{% url 'login' %}">LOGIN</a></h3>
+            </div>
+        </div> 
+		</div>
+	</div>
+	<!--end of login form popup-->
+	<!--signup form popup-->
+	<div class="login-wrapper" id="signup-content">
+		<div class="login-content">
+			<a href="#" class="close">x</a>
+			<!-- <h3>sign up</h3> -->
+			<h3><a href="{% url 'signup' %}">SIGN UP</a></h3>
+
+		</div>
+	</div>
+
+	<!--end of signup form popup-->
+
+	<!-- BEGIN | Header -->
+	<header class="ht-header">
+		<div class="container">
+			<nav class="navbar navbar-default navbar-custom">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header logo">
-				    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					    <span class="sr-only">Toggle navigation</span>
-					    <div id="nav-icon1">
+					<div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<div id="nav-icon1">
 							<span></span>
 							<span></span>
 							<span></span>
 						</div>
-				    </div>
-				    <a href="{% url 'home' %}"><img class="logo" src="{% static 'movie/images/logo1.png' %}" alt="" width="119" height="58"></a>
-			    </div>
+					</div>
+					<a href="{% url 'home' %}"><img class="logo" src="{% static 'movie/images/logo1.png' %}" alt=""
+							width="119" height="58"></a>
+				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav flex-child-menu menu-left">
-						<li><a href="{% url 'movies' %}">Movies</a></li> 
+						<li><a href="{% url 'movies' %}">Movies</a></li>
 						<li><a href="{% url 'genres' %}">Genres</a></li>
 						<li><a href="{% url 'celebrities' %}">Celebrities</a></li>
 					</ul>
 					<ul class="nav navbar-nav flex-child-menu menu-right">
-              
-						<li><a href="#">Help</a></li>
-						<li class="loginLink"><a href="#">LOG In</a></li>
-						<li class="btn signupLink"><a href="#">sign up</a></li>
+						
+						{% if user.is_authenticated %}
+						<li class="logoutlink"><a href="{% url 'logout' %}">LOGOUT</a></li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Welcome, {{user.username}}</a>
+						</li>
+						{% else %}
+						<li class="loginLink"><a href="{% url 'login' %}">LOG In</a></li>
+						<li class="btn signupLink"><a href="{% url 'signup' %}">sign up</a></li>
+						{% endif %}
+						
 					</ul>
 				</div>
-			<!-- /.navbar-collapse -->
-	    </nav>
-	    
-	    <!-- top search form -->
-	    {% comment %} <div class="top-search"> {% endcomment %}
-		<form class="top-search" method = POST action="{% url 'searchresult' %}">
-		{% csrf_token %}
-			<input type="text" placeholder="Search for a movie, TV Show or Celebrity that you are looking for" name="searched">
-		</form>
-	    {% comment %} </div> {% endcomment %}
-	</div>
-</header>
-{% block body %}
-        {% endblock %}
-<!-- footer section-->
-<footer class="ht-footer">
-	<div class="container">
-		<div class="flex-parent-ft">
-			<div class="flex-child-ft item1">
-				 <a href=""><img class="logo" src="{% static 'movie/images/logo1.png' %}" alt=""></a>
-				 <p>Uttara Sector-10<br>
-				Uttara, Dhaka</p>
-				<p>Call us: <a href="#">(+02) 8556867</a></p>
-			</div>
-			<div class="flex-child-ft item2">
-				<h4>Resources</h4>
-				<ul>
-					<li><a href="#">About</a></li> 
-					<li><a href="#">Blockbuster</a></li>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Forums</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Help Center</a></li>
-				</ul>
-			</div>
-			<div class="flex-child-ft item3">
-				<h4>Legal</h4>
-				<ul>
-					<li><a href="#">Terms of Use</a></li> 
-					<li><a href="#">Privacy Policy</a></li>	
-					<li><a href="#">Security</a></li>
-				</ul>
-			</div>
-			<div class="flex-child-ft item4">
-				<h4>Account</h4>
-				<ul>
-					<li><a href="#">My Account</a></li> 
-					<li><a href="#">Watchlist</a></li>	
-					<li><a href="#">Collections</a></li>
-					<li><a href="#">User Guide</a></li>
-				</ul>
-			</div>
-			<div class="flex-child-ft item5">
-				<h4>Newsletter</h4>
-				<p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
-				<form action="#">
-					<input type="text" placeholder="Enter your email...">
-				</form>
-				<a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
-			</div>
-		</div>
-	</div>
-	<div class="ft-copyright">
-		<div class="ft-left">
-			<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
-		</div>
-		<div class="backtotop">
-			<p><a href="#" id="back-to-top">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>
-		</div>
-	</div>
-</footer>
-<!-- end of footer section-->
+				<!-- /.navbar-collapse -->
+			</nav>
 
-<script src="{% static 'movie/js/jquery.js' %}"></script>
-<script src="{% static 'movie/js/plugins.js' %}"></script>
-<script src="{% static 'movie/js/plugins2.js' %}"></script>
-<script src="{% static 'movie/js/custom.js' %}"></script>
+			<!-- top search form -->
+			{% comment %} <div class="top-search"> {% endcomment %}
+				<form class="top-search" method=POST action="{% url 'searchresult' %}">
+					{% csrf_token %}
+					<input type="text" placeholder="Search for a movie, TV Show or Celebrity that you are looking for"
+						name="searched">
+				</form>
+				{% comment %}
+			</div> {% endcomment %}
+		</div>
+	</header>
+	{% block body %}
+	{% endblock %}
+	<!-- footer section-->
+	<footer class="ht-footer">
+		<div class="container">
+			<div class="flex-parent-ft">
+				<div class="flex-child-ft item1">
+					<a href=""><img class="logo" src="{% static 'movie/images/logo1.png' %}" alt=""></a>
+					<p>Uttara Sector-10<br>
+						Uttara, Dhaka</p>
+					<p>Call us: <a href="#">(+02) 8556867</a></p>
+				</div>
+				<div class="flex-child-ft item2">
+					<h4>Resources</h4>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Blockbuster</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Forums</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Help Center</a></li>
+					</ul>
+				</div>
+				<div class="flex-child-ft item3">
+					<h4>Legal</h4>
+					<ul>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Security</a></li>
+					</ul>
+				</div>
+				<div class="flex-child-ft item4">
+					<h4>Account</h4>
+					<ul>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Watchlist</a></li>
+						<li><a href="#">Collections</a></li>
+						<li><a href="#">User Guide</a></li>
+					</ul>
+				</div>
+				<div class="flex-child-ft item5">
+					<h4>Newsletter</h4>
+					<p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
+					<form action="#">
+						<input type="text" placeholder="Enter your email...">
+					</form>
+					<a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="ft-copyright">
+			<div class="ft-left">
+				<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+			</div>
+			<div class="backtotop">
+				<p><a href="#" id="back-to-top">Back to top <i class="ion-ios-arrow-thin-up"></i></a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- end of footer section-->
+
+	<script src="{% static 'movie/js/jquery.js' %}"></script>
+	<script src="{% static 'movie/js/plugins.js' %}"></script>
+	<script src="{% static 'movie/js/plugins2.js' %}"></script>
+	<script src="{% static 'movie/js/custom.js' %}"></script>
 </body>
 
 
 </html>
-
