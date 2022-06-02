@@ -7,4 +7,7 @@ This project is a work in progress. It contains the following components-
 3. movie recommendation using Naive Bayes classifier
 
 The datasets for this project has been published on kaggle.
+<br/>
 https://www.kaggle.com/datasets/codernob/imdb-bangla-movie-dataset
+<br/>
+https://www.kaggle.com/datasets/codernob/bangla-movie-userrating-dataset
